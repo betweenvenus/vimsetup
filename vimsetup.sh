@@ -17,8 +17,8 @@ while getopts "ie" opt; do
             echo 'done!'
             ;;
         e)
-            export VIMINIT='source $CUSTOMVIMRC'
-            export CUSTOMVIMRC='~/html/vimrc/.vimrc'
+            source export VIMINIT='source $CUSTOMVIMRC'
+            source export CUSTOMVIMRC='~/html/vimrc/.vimrc'
             echo 'ready!'
             ;;
         esac
