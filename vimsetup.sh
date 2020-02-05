@@ -2,8 +2,8 @@
 
 # NOTE: This script should be sourced ('source ./vimsetup.sh -i')
 # Arguments guide:
-# -i: *Installs* the vimrc. Only run this the first time. Clones, then sets path.
-# -e: Sets up your environment for the custom vimrc. Run this every time you SSH in.
+# -i: Downloads the vimrc file and configures .bashrc to load it automatically. Only run this once.
+# -e: Exports the environment variables. Source this if there's some kind of issue with the installation. 
 
 while getopts "ie" opt; do
     case $opt in
