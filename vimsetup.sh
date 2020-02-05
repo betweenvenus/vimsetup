@@ -10,10 +10,10 @@ while getopts "ie" opt; do
         i)
             mkdir ~/html/vimrc
             git clone https://github.com/betweenvenus/vimrc ~/html/vimrc
-            echo -e '\n' >> ~/.ssh/rc
-            echo '# Fancy Vim set up with custom .vimrc location' >> ~/.ssh/rc
-            echo 'export VIMINIT=source $CUSTOMVIMRC' >> ~/.ssh/rc
-            echo 'export CUSTOMVIMRC=~/html/vimrc/.vimrc' >> ~/.ssh/rc
+            echo -e '\n' >> ~/.bashrc
+            echo '# Fancy Vim set up with custom .vimrc location' >> ~/.bashrc
+            echo 'export VIMINIT=source $CUSTOMVIMRC' >> ~/.bashrc
+            echo 'export CUSTOMVIMRC=~/html/vimrc/.vimrc' >> ~/.bashrc
             echo 'done!'
             ;;
         e)
